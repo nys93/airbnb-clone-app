@@ -1,0 +1,38 @@
+{
+  // パーサー
+  "parser": "@typescript-eslint/parser",
+  // jsx を使います
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    // import 文でモジュールを使用します
+    "sourceType": "module"
+  },
+  // React のバージョンは自動検出に
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "plugins": ["react-hooks", "react", "@typescript-eslint"],
+  // 基本的にルールは recommended に従う
+  // prettier は配列の最後尾に書く
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:prettier/recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:react/recommended",
+    "prettier"
+  ],
+  "rules": {
+    "@typescript-eslint/explicit-member-accessibility": 0,
+    "@typescript-eslint/explicit-function-return-type": 0,
+    "@typescript-eslint/no-parameter-properties": 0,
+    "@typescript-eslint/interface-name-prefix": 0,
+    "@typescript-eslint/explicit-module-boundary-types": 0,
+    "@typescript-eslint/no-explicit-any": "off"
+  }
+}
