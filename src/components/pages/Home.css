@@ -5,12 +5,25 @@ body {
 .home-wrapper{
   width: 100vw;
   height: 100vw;
+  background-image: url("../../assets/home-image.jpg");
+}
+
+.home-top-text{
+  height: 10vw;
+  width: 100vw;
+  background-color: #000000;
+}
+
+.home-top-text > h1{
+  text-align: center;
+  text-decoration-color: #F7F7F7;
+  height: 100vw;
+  width: 100vw;
 }
 
 .home-top-header{
   height: 100vw;
   width: 100vw;
-  background-image: url("../../assets/home-image.jpg");
 }
 
 .home-top-menu{
