@@ -5,37 +5,61 @@ body {
 .home-wrapper{
   width: 100vw;
   height: 100vw;
-  background-image: url("../../assets/home-image.jpg");
 }
 
 .home-top-text{
-  height: 10vw;
+  height: 5vw;
   width: 100vw;
-  background-color: #000000;
+  text-align: center;
+  background-color: black;
+  text-decoration-color: white;
+  display: table;
 }
 
-.home-top-text > h1{
-  text-align: center;
-  text-decoration-color: #F7F7F7;
-  height: 100vw;
-  width: 100vw;
+.home-top-text span{
+  color: white;
+  display: table-cell;
+  vertical-align: middle;
 }
 
 .home-top-header{
   height: 100vw;
   width: 100vw;
+  background-image: url("../../assets/home-image.jpg");
 }
 
 .home-top-menu{
   height: 20vw;
   width: 100vw;
-  background-color: aquamarine;
+}
+
+.home-top-menu-left{
+  float: left;
+  width: 50%;
+  padding-top: 10px;
+
+}
+
+.home-top-menu-right{
+  padding-top: 10px;
+  color: white;
+  width: 50%;
+  height: 20vw;
+  display: flex;
+  flex-direction: row-reverse;
+}
+.home-top-menu-right div{
+  width: 30%;
+  justify-content: space-between;
 }
 
 .home-top-search{
   height: 20vw;
   width: 100vw;
-  background-color: brown;
+}
+
+.airbnb-logo{
+  width: 46px;
 }
 
 
