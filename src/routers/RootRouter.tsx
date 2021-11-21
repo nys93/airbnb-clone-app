@@ -6,6 +6,7 @@ import { store } from "../redux/store";
 
 import Map from "../components/pages/Map";
 import NotFound from "../components/pages/NotFound";
+import Home from "../components/pages/Home";
 
 const RootRouter = () => {
 	return (
@@ -15,6 +16,9 @@ const RootRouter = () => {
 					<Provider store={store}>
 						<Map />
 					</Provider>
+				</Route>
+				<Route path="/home">
+					<Home />
 				</Route>
 				<Route>
 					<NotFound />
